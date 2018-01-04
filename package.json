@@ -1,9 +1,12 @@
 {
   "name": "react-redux-starter-kit",
   "version": "0.1.0",
+  "description": "Basic starter kit to do progaming with react redux webpack and eslint (code formating)",
   "private": true,
   "dependencies": {
+    "eslint-plugin-react": "^7.5.1",
     "history": "^4.7.2",
+    "html-webpack-plugin": "^2.30.1",
     "immutable": "^3.8.2",
     "material-ui": "^0.19.4",
     "path": "^0.12.7",
@@ -15,18 +18,23 @@
     "react-router-redux": "^5.0.0-alpha.8",
     "react-scripts": "1.0.17",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server --open",
+    "build": "webpack -p",
+    "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/*.js ./src/**/**/*.js ./src/**/*.jsx ./src/**/**/*.jsx"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
     "babel-preset-es2017": "^6.24.1",
-    "babel-preset-react": "^6.24.1"
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^4.14.0",
+    "eslint-plugin-babel": "^4.1.2",
+    "file-loader": "^1.1.6"
   }
 }

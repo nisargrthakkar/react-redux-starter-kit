@@ -4,16 +4,15 @@ import RaisedButton from 'material-ui/RaisedButton';
 
 class AboutView extends Component {
 
-    render() {
-        return (
-            <div>
-                <h1>About Page</h1>
-                <p>This About Page</p>
-                <div>
-                    <RaisedButton onClick={() => history.push('/')} label="Home" />
-                </div>
-            </div>
-        );
-    }
+  render() {
+    return (
+      <div>
+        <h1>About Page</h1>
+        <div>
+          <RaisedButton onClick={() => history.push('/')} label="Home" />
+        </div>
+      </div>
+    );
+  }
 }
 export default AboutView;

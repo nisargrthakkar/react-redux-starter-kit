@@ -2,20 +2,20 @@ import HomeView from './HomeView';            //eslint-disable-line
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import {
-    increment,
-    decrement
+  increment,
+  decrement
 } from './HomeState';
 
 const mapStateToProps = state => ({
-    count: state.home.count
+  count: state.home.count
 });
 
 const mapDispatchToProps = dispatch => bindActionCreators({
-    increment,
-    decrement
+  increment,
+  decrement
 }, dispatch);
 
 export default connect(
-    mapStateToProps,
-    mapDispatchToProps
+  mapStateToProps,
+  mapDispatchToProps
 )(HomeView);
