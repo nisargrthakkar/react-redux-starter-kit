@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { history } from '../../redux/store';
 import RaisedButton from 'material-ui/RaisedButton';
-import logo from '../../images/logo.svg';
 
 class HomeView extends Component {
 
@@ -14,7 +13,7 @@ class HomeView extends Component {
       return (
         <div>
           <h1>Home</h1>
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={require('../../images/logo.svg')} className="App-logo" alt="logo" />
           <p>Count: {this.props.count}</p>
           <RaisedButton onClick={() => { this.props.increment(); }} label="Increment" primary={true} />
           <br />
