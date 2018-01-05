@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-// import './../css/style.css';
+import './../css/style.css';
 
 import HomeViewContainer from './home/HomeViewContainer';
 import AboutView from './about/AboutView';
