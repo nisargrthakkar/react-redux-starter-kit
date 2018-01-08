@@ -44,9 +44,22 @@ For debugging purposes please use:
 
 
 
-### How do I deploy this?
+## How do I deploy this?
 
 `yarn build`. This will prepare and build the project for production use.
 
 - Places the resulting built project files into `/dist` directory. (This is the folder you'll put on server).
+
+## How to keep your project updated
+If your application is a fork from this repo, you can add this repo to another git remote:
+
+```
+git remote add upstream https://github.com/nisargrthakkar/react-redux-starter-kit.git
+```
+Then, use git to merge some latest commits:
+
+```
+git pull upstream master
+```
+
 
