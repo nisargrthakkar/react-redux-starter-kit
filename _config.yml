@@ -1,6 +1,7 @@
 theme:  jekyll-theme-cayman
 title:  React Redux Webpack Starter Kit
-description: "React Redux Starter Kit is which let's you build rich real world apps. It's not as light as some starter kits which only let you write a simple hello world app and then you have to struggle with installing all the other stuff yourself."
+description: "React Redux Webapack and eslint Starter Kit is which let's you build smart real world apps."
+keywords: "React Redux Webpack Starter Kit, React, Redux, Starter Kit, Webpack, Babel, material-ui, Eslint, Smart kit, material, build, ReactJs, Beginner, react app example, react best practices, react app, react redux starter kit, react redux tutorial, react redux demo, material-ui react examples "
 author: Nisarg R Thakkar
 improve_content: https://github.com/nisargrthakkar/react-redux-starter-kit/issues
 whitelist:
@@ -12,10 +13,9 @@ og_image: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.
 og_locale:  "en_EN"
 og_type:  "website"
 og_title: "React Redux Webpack Starter Kit"
-og_description: "React Redux Starter Kit is which let's you build rich real world apps. It's not as light as some starter kits which only let you write a simple hello world app and then you have to struggle with installing all the other stuff yourself."
-keywords: "React, Redux , Starter Kit , Webpack, Babel, material-ui, Eslint , "
+og_description: "React Redux Webapack and eslint Starter Kit is which let's you build smart real world apps."
 twitter_image:  "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png"
 twitter_locale: "en_EN"
 twitter_type: "website"
 twitter_title:  "React Redux Webpack Starter Kit"
-twitter_description:  "React Redux Starter Kit is which let's you build rich real world apps. It's not as light as some starter kits which only let you write a simple hello world app and then you have to struggle with installing all the other stuff yourself."
+twitter_description:  "React Redux Webapack and eslint Starter Kit is which let's you build smart real world apps."
