@@ -3,6 +3,26 @@
   "version": "0.1.0",
   "description": "Basic starter kit to do progaming with react redux webpack and eslint (code formating)",
   "private": true,
+  "author": "Nisarg Thakkar",
+  "license": "MIT",
+  "bugs": "https://github.com/nisargrthakkar/react-redux-starter-kit/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nisargrthakkar/react-redux-starter-kit"
+  },
+  "keywords": [
+    "React",
+    "Starter Kit",
+    "Webpack",
+    "Redux",
+    "Bable",
+    "Eslint",
+    "material-ui",
+    "react-router-redux",
+    "react-redux",
+    "history",
+    "immutable"
+  ],
   "dependencies": {
     "eslint-plugin-react": "^7.5.1",
     "history": "^4.7.2",
