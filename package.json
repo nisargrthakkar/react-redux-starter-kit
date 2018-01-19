@@ -44,7 +44,7 @@
     "webpack-dev-server": "^2.9.7"
   },
   "scripts": {
-    "start": "webpack-dev-server --open",
+    "start": "cross-env NODE_ENV=dev webpack-dev-server --open --config webpack.dev.config.js",
     "dev": "cross-env NODE_ENV=dev webpack -p --config webpack.dev.config.js",
     "build": "rimraf ./dist/ && cross-env NODE_ENV=production webpack -p --config webpack.production.config.js",
     "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/*.js ./src/**/**/*.js ./src/**/*.jsx ./src/**/**/*.jsx"
