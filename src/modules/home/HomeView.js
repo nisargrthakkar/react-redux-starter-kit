@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react';  //eslint-disable-line
 import { history } from '../../redux/store';
 import RaisedButton from 'material-ui/RaisedButton';
 
@@ -17,6 +17,9 @@ class HomeView extends Component {
         <br />
         <br />
         <RaisedButton onClick={() => history.push('/about')} label="About Us" />
+        <br />
+        <br />
+        <RaisedButton onClick={() => history.push('/postpage')} label="Call API PAGE" />
       </div>
     );
   }

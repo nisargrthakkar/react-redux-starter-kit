@@ -4,7 +4,10 @@ import thunk from 'redux-thunk';
 import createHistory from 'history/createBrowserHistory';
 import rootReducer from './reducer';
 
-export const history = createHistory();
+export const history = createHistory({
+  basname: '',
+  hashType: 'slash'
+});
 
 /**
  * Logs all actions and states after they are dispatched.

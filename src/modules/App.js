@@ -5,6 +5,7 @@ import './../css/style.css';
 
 import HomeViewContainer from './home/HomeViewContainer';
 import AboutView from './about/AboutView';
+import PostPageViewContainer from './postPage/PostPageViewContainer';
 
 class App extends Component {
 
@@ -15,6 +16,7 @@ class App extends Component {
           <main>
             <Route exact path="/" component={HomeViewContainer} />
             <Route exact path="/about" component={AboutView} />
+            <Route exact path="/postpage" component={PostPageViewContainer} />
           </main>
         </MuiThemeProvider>
       </div>
