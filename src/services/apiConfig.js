@@ -6,7 +6,7 @@ const apiEnvironment = {
     api: 'https://jsonplaceholder.typicode.com'
   },
   production: {
-    api: 'https://jsonplaceholder.typicode.com/new/'
+    api: 'https://jsonplaceholder.typicode.com'
   }
 };
 
