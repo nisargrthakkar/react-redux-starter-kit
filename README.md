@@ -23,9 +23,21 @@ yarn install
 
 ### Development
 
+Build for Development:
+
+```$ yarn build:dev```
+
+Start Server for Development:
+
+```$ yarn server:dev```
+
 Build for Production:
 
-```$ yarn build```
+```$ yarn build:prod```
+
+Start Server for Development:
+
+```$ yarn server:prod```
 
 
 Hot reloading via webpack middlewares:
@@ -33,6 +45,11 @@ Hot reloading via webpack middlewares:
 ```$ yarn start```
 
 Point your browser to http://localhost:8080/, page hot reloads automatically when there are changes
+
+
+Check eslint errors 
+
+```$ yarn eslint```
 
 
 ## Debugging
@@ -62,4 +79,7 @@ Then, use git to merge some latest commits:
 git pull upstream master
 ```
 
+## License
+
+[MIT License](https://nisargrthakkar.mit-license.org/), 2018  by Nisarg R. Thakkar
 
