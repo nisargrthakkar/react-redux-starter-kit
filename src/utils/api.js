@@ -1,55 +1,44 @@
 import Promise from 'bluebird';
 import { getConfiguration } from '../utils/configuration';
 
-const EventEmitter = require('event-emitter');
-
 const TIMEOUT = 6000;
-
-/**
- * All HTTP errors are emitted on this channel for interested listeners
- */
-export const errors = new EventEmitter();
 
 /**
  * GET a path relative to API root url.
  * @param {String}  path Relative path to the configured API endpoint
- * @param {Boolean} suppressRedBox If true, no warning is shown on failed request
  * @returns {Promise} of response body
  */
-export async function get(path, suppressRedBox) {
-  return bodyOf(request('get', path, null, suppressRedBox));
+export async function get(path) {
+  return bodyOf(request('get', path, null));
 }
 
 /**
  * POST JSON to a path relative to API root url
  * @param {String} path Relative path to the configured API endpoint
  * @param {Object} body Anything that you can pass to JSON.stringify
- * @param {Boolean} suppressRedBox If true, no warning is shown on failed request
  * @returns {Promise}  of response body
  */
-export async function post(path, body, suppressRedBox) {
-  return bodyOf(request('post', path, body, suppressRedBox));
+export async function post(path, body) {
+  return bodyOf(request('post', path, body));
 }
 
 /**
  * PUT JSON to a path relative to API root url
  * @param {String} path Relative path to the configured API endpoint
  * @param {Object} body Anything that you can pass to JSON.stringify
- * @param {Boolean} suppressRedBox If true, no warning is shown on failed request
  * @returns {Promise}  of response body
  */
-export async function put(path, body, suppressRedBox) {
-  return bodyOf(request('put', path, body, suppressRedBox));
+export async function put(path, body) {
+  return bodyOf(request('put', path, body));
 }
 
 /**
  * DELETE a path relative to API root url
  * @param {String} path Relative path to the configured API endpoint
- * @param {Boolean} suppressRedBox If true, no warning is shown on failed request
  * @returns {Promise}  of response body
  */
-export async function del(path, suppressRedBox) {
-  return bodyOf(request('delete', path, null, suppressRedBox));
+export async function del(path) {
+  return bodyOf(request('delete', path, null));
 }
 
 /**
@@ -57,20 +46,16 @@ export async function del(path, suppressRedBox) {
  * @param {String} method One of: get|post|put|delete
  * @param {String} path Relative path to the configured API endpoint
  * @param {Object} body Anything that you can pass to JSON.stringify
- * @param {Boolean} suppressRedBox If true, no warning is shown on failed request
  */
-export async function request(method, path, body, suppressRedBox) {
+export async function request(method, path, body) {
   try {
-    const response = await sendRequest(method, path, body, suppressRedBox);
+    const response = await sendRequest(method, path, body);
     return handleResponse(
       path,
       response
     );
   }
   catch (error) {
-    if (!suppressRedBox) {
-      logError(error, url(path), method);
-    }
     throw error;
   }
 }
@@ -139,7 +124,6 @@ function getRequestHeaders(body, token) {
   if (token) {
     return { ...headers, Authorization: token };
   }
-
   return headers;
 }
 
@@ -164,18 +148,5 @@ async function bodyOf(requestPromise) {
     return response.body;
   } catch (e) {
     throw e;
-  }
-}
-
-/**
- * Make best effort to turn a HTTP error or a runtime exception to meaningful error log message
- */
-function logError(error, endpoint, method) {
-  if (error.status) {
-    const summary = `(${error.status} ${error.statusText}): ${error._bodyInit}`;
-    console.error(`API request ${method.toUpperCase()} ${endpoint} responded with ${summary}`);
-  }
-  else {
-    console.error(`API request ${method.toUpperCase()} ${endpoint} failed with message "${error.message}"`);
   }
 }

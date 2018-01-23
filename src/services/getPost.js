@@ -12,7 +12,7 @@ export const postContain = value => ({ type: POST_CONTAIN, payload: value });
 
 export const getPostbyID = () => {
   return async(dispatch) => {
-    get('/posts/1', true).then((responseData) => {
+    get('/posts/1').then((responseData) => {
       if (responseData.status === 200) {
         dispatch(postContain(responseData.data));
       } else {
