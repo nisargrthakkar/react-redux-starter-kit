@@ -35,7 +35,7 @@ Build for Production:
 
 ```$ yarn build:prod```
 
-Start Server for Development:
+Start Server for Production:
 
 ```$ yarn server:prod```
 
@@ -66,6 +66,9 @@ For debugging purposes please use:
 `yarn build`. This will prepare and build the project for production use.
 
 - Places the resulting built project files into `/dist` directory. (This is the folder you'll put on server).
+
+- Start Server for Production: ```$ yarn server:prod```
+
 
 ## How to keep your project updated
 If your application is a fork from this repo, you can add this repo to another git remote:
