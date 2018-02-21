@@ -12,3 +12,30 @@ body {
   animation: App-logo-spin infinite 20s linear;
   height: 80px;
 }
+
+/* Header CSS */
+
+.header {
+  background-color : #484D4F;
+  width: 100%;
+}
+
+.topRightMenu {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0;
+
+}
+
+.topRightMenu li {
+  width: 100px;
+  cursor: pointer;
+  text-align: center;
+  color : #ffffff;
+  line-height: 60px
+}
+
+.topRightMenu li:hover {
+  background-color: #273032;
+}

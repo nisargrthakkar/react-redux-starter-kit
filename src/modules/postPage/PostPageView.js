@@ -1,5 +1,4 @@
 import React, { Component, PropTypes } from 'react';  //eslint-disable-line
-import { history } from '../../redux/store';
 import RaisedButton from 'material-ui/RaisedButton';
 
 class PostPageView extends Component {
@@ -8,6 +7,11 @@ class PostPageView extends Component {
     this.props.emptyPost();
   }
 
+  /**
+   * Render Header
+   * @return {JSX} Rendered Post Page
+   */
+
   render() {
     return (
       <div>
@@ -15,15 +19,10 @@ class PostPageView extends Component {
         <RaisedButton onClick={() => { this.props.getPostbyID(); }} label="Call API" primary={true} />
         <br />
         <br />
+        <p> API response : </p>
         <code>
           {JSON.stringify(this.props.post)}
         </code>
-        <br />
-        <br />
-        <RaisedButton onClick={() => history.push('/')} label="Home" />
-        <br />
-        <br />
-        <RaisedButton onClick={() => history.push('/about')} label="About Us" />
       </div>
     );
   }
