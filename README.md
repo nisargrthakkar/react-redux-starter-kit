@@ -71,6 +71,7 @@ For debugging purposes please use:
 
 
 ## How to keep your project updated
+
 If your application is a fork from this repo, you can add this repo to another git remote:
 
 ```
@@ -81,6 +82,32 @@ Then, use git to merge some latest commits:
 ```
 git pull upstream master
 ```
+
+
+## How to Contribute
+
+We welcome your contributions to this project. There are various ways to contribute:
+
+**Reporting issues**
+
+Help improve the project by reporting issues that you find by filing a new issue at the
+[react-redux-starter-kit issue tracker](https://github.com/nisargrthakkar/react-redux-starter-kit/issues/new).
+
+**Features suggestions**
+
+You can also add feature suggestions by filing a new issue at the
+[react-redux-starter-kit issue tracker](https://github.com/nisargrthakkar/react-redux-starter-kit/issues/new).
+
+**Documentation**
+
+You can help by adding or improving existing documentation. Simply send us a pull request for us to
+consider your proposed changes.
+
+**Bug fixes**
+
+Pull requests are welcome for minor bug fixes or enhancement of this kit.
+
+
 
 ## License
 
