@@ -107,7 +107,14 @@ consider your proposed changes.
 
 Pull requests are welcome for minor bug fixes or enhancement of this kit.
 
+## Some Screen Shot of Starter Kit
 
+#### Home Screen
+![Home Screen](./screenshot/home.gif)
+#### About Screen
+![About Screen](./screenshot/about.png)
+#### Call API Screen
+![Call API Screen](./screenshot/api_call.gif)
 
 ## License
 
