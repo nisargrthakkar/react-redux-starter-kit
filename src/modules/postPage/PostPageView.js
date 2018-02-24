@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';  //eslint-disable-line
+import React, { Component } from 'react';  //eslint-disable-line
 import RaisedButton from 'material-ui/RaisedButton';
 
 class PostPageView extends Component {
