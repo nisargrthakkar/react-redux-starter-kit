@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
 import HeaderViewContainer from '../component/header/HeaderView';
@@ -15,9 +15,11 @@ class App extends Component {
         <MuiThemeProvider>
           <main>
             <HeaderViewContainer />
-            <Route exact path="/" component={HomeViewContainer} />
-            <Route exact path="/about" component={AboutView} />
-            <Route exact path="/postpage" component={PostPageViewContainer} />
+            <Switch>
+              <Route exact path="/" component={HomeViewContainer} />
+              <Route exact path="/about" component={AboutView} />
+              <Route exact path="/postpage" component={PostPageViewContainer} />
+            </Switch>
           </main>
         </MuiThemeProvider>
       </div>
