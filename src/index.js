@@ -1,5 +1,5 @@
 import App from './modules/App';
-import React from 'react';
+import React from 'react'; //eslint-disable-line
 import { render } from 'react-dom';
 import { Provider } from 'react-redux';
 import { ConnectedRouter } from 'react-router-redux';
