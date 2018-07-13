@@ -1,5 +1,5 @@
 
-# React + Redux + Webapck + Eslint Starter Project
+# React + Redux + Webpack + Eslint Starter Project
 
 
 - [x] [React](https://facebook.github.io/react/) — A virtual DOM JavaScript library for rendering UI.
