@@ -11,6 +11,7 @@ import './css/style.css';
 
 const target = document.querySelector('#root');
 const test = '';
+const test1 = '';
 
 render(
   <Provider store={store}>
