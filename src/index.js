@@ -7,7 +7,10 @@ import store, { history } from './redux/store';
 import './css/style.css';
 //Testssss
 
+//<H1>Hello</h1>
+
 const target = document.querySelector('#root');
+const test = '';
 
 render(
   <Provider store={store}>
