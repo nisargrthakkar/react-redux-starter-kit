@@ -11,7 +11,7 @@ import './css/style.css';
 
 //<H1>Hello</h1>
 
-//REmove it -- ----
+
 
 const target = document.querySelector('#root');
 const test = '';
@@ -25,3 +25,6 @@ render(
   </Provider>,
   target
 );
+
+
+//REmove it
